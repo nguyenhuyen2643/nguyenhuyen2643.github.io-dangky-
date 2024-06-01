@@ -1,0 +1,254 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #55382d;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+ /* Phong cách thẻ tiêu đề */
+ header {
+    flex-basis: 100%;
+    background-color: #ffc8c8;
+    color: #55382d;
+    padding: 20px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin: 5px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+/* Phong cách một số thẻ chính */
+main {
+    padding: 20px;
+}
+section {
+    margin: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"],
+input[type="month"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input[type="submit"] {
+    background-color:#ffc8c8;
+    color: #55382d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align:right;
+}
+input[type ="file"]
+input[type="submit"]:hover {
+    background-color: #f88484;
+}
+a:link {
+    text-decoration: none;
+    color:rgb(98, 62, 55);
+
+}
+a:visited {
+    text-decoration: none;
+    color:rgb(98, 62, 55);
+}
+a:hover {
+    color:rgb(76, 150, 207);
+}
+a:active {
+    color:rgb(26, 82, 18)
+}
+.input-group {
+    display: inline-block; /* Hiển thị ô input trên cùng 1 dòng */
+    margin-right: 10px; /* Khoảng cách giữa hai ô input */
+    width: 45%; /* Adjust width to fit the layout */
+    padding: 8px;
+}
+
+.input-group label {
+    display: inline-block; /* Hiển thị nhãn label trên cùng 1 dòng */
+    width: 100px; /* Độ rộng của nhãn label */
+    text-align:center;
+}
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.make {
+    margin: 0 auto;
+    border-radius: 10px ;
+    box-sizing: border-box;
+}
+p {
+    font-family:'Times New Roman', Times, serif;  
+    text-align: justify; 
+}
+nav {
+    flex-basis: 100%;
+    margin: 5px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tieude {
+    display:flex;
+    background-color:rgb(255, 196, 209);
+    flex:100%;
+    padding:0px;
+}
+.tieude a {
+    color:white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.tieude a:hover {
+    background-color:rgb(255, 196, 209);
+    color: #333;
+}
+.tieude #selected {
+    background-color:rgb(255, 196, 209);
+    color: #333;
+}
+h3 {
+    font-size: 24px;
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+}
+h4 {
+    font-size: 18px;
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    margin: 10px;
+}
+/*Chân trang*/
+.footer-widgets {
+    display:flex;
+    background-color:rgb(255, 196, 209);
+    flex:100%;
+    padding:0px;
+    color: rgb(98, 62, 55);
+    text-align: center;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    padding: 0 15px;
+    min-width: 200px;
+}
+
+.widget-title {
+    font-size: 1.5em;
+    margin: 10px;
+    color: rgb(98, 62, 55);
+}
+
+.is-divider {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(98, 62, 55);
+    margin: 0px;
+}
+
+.textwidget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.textwidget li {
+    margin: 5px 0;
+    text-align:left;
+}
+
+.textwidget li a {
+    color: rgb(98, 62, 55);
+    text-decoration: none;
+}
+
+.textwidget li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin: 22px auto;
+    border-radius: 20px ;
+    box-sizing: border-box;
+    align-items: center;
+}
+.zalo-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+}
+
+.zalo-button img {
+    width: 70px; /* Kích thước của biểu tượng Zalo */
+    height: 70px;
+}
+.video-container {
+    display: flex;
+    justify-content: space-around; /* Hoặc dùng space-between hoặc space-evenly */
+    margin: 10px;
+}
+
+.video-item {
+    width: 30%; /* Chia đều không gian cho 3 video */
+    text-align: center; /* Căn giữa chú thích */
+}
+
+.video-item video {
+    width: 100%; /* Đảm bảo video chiếm toàn bộ chiều rộng của mỗi cột */
+    height: auto; /* Đảm bảo video giữ được tỷ lệ gốc */
+}
+
+.note {
+    margin-top: 10px; /* Khoảng cách giữa video và chú thích */
+    font-size: 16px; /* Kích thước chữ của chú thích */
+    color: rgb(98, 62, 55); /* Màu chữ của chú thích */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
